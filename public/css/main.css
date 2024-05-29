@@ -1,0 +1,381 @@
+:root {
+    --primaria: #3e4095;
+    --secundaria: #00afee;
+    --laranja: #f58534;
+    --texto: #2f2f2f;
+    --label-categorias: #d9c505;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 65px;
+
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+
+#menu ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#menu a {
+    color: var(--texto);
+    font-weight: 500;
+}
+
+#botao-menu-mobile {
+    display: none;
+    /* desaparece o botão da tela*/
+}
+
+.btn-secundario {
+    background-color: var(--secundaria);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: rgb(253, 253, 253);
+}
+
+#banner {
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#banner p {
+    margin: 10px;
+}
+
+#formPesquisa {
+    background-color: rgb(255, 255, 255);
+    color: var(--texto);
+    font-size: 1.5em;
+    border-radius: 30px;
+}
+
+#formPesquisa form {
+    display: flex;
+    align-items: center;
+}
+
+#formPesquisa form input {
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+}
+
+#formPesquisa form i {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+#formPesquisa button {
+    background-color: var(--primaria);
+    font-size: 15px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+}
+
+.lista-servicos-banner ul li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 0.8em;
+    border: 1px dotted #ffff;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+.secao-titulos {
+    border-left: 5px solid var(--primaria);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo a {
+    color: var(--texto);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* lista de categorias */
+.lista-card-categorias {
+    display: flex;
+    gap: 40px;
+}
+
+.lista-card-categorias img {
+    /* os primeiros codigos deixa o site rensponcivel */
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.lista-card-categorias div {
+    position: relative;
+}
+
+.lista-card-categorias .item span {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: var(--laranja);
+    color: #ffff;
+    border-radius: 15px;
+    padding: 0px 20px;
+    font-size: 12px;
+}
+
+/* ===================== */
+.lista-card-servico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card-servico {
+    width: calc((100% / 3) - 30px);
+    flex-grow: 1;
+}
+
+/* ======================= */
+
+
+.lista-card-servico img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    filter: brightness(70%);
+}
+
+
+
+.card-foto {
+    position: relative;
+}
+
+.card-foto-legenda {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.card-foto-preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-foto-categoria {
+    background-color: var(--label-categorias);
+    border-radius: 15px;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.card-descricao-legenda {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rodaPe {
+    border-top: 2px solid #ccc;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+#linha-rodape {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coluna-rodape {
+    width: 25%;
+}
+
+.coluna-rodape a {
+    color: var(--texto);
+    margin-top: 5px;
+    display: block;
+}
+
+.coluna-rodape a:hover {
+    color: var(--primaria);
+    font-weight: 500;
+}
+
+.coluna-rodape ul {
+    list-style: none;
+}
+
+.coluna-rodape i {
+    color: var(--primaria);
+}
+
+.rede-sociais {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rede-sociais a {
+    background-color: #ededed;
+    font-size: 24px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.copyright {
+    background-color: #ccc;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+
+/* estilo mobile */
+@media (max-width: 760px) {
+
+    #cabecalho {
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        z-index: 99999;
+    }
+
+    #logotipo img {
+        height: 30px;
+    }
+
+    #banner {
+        padding-top: 60px;
+        min-height: 330px;
+    }
+
+    #botao-menu-mobile {
+        display: block;
+        /* mostra o botão na tela*/
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    #menu {
+
+        position: fixed;
+        background-color: #fff;
+        width: 250px;
+        height: 100vh;
+        top: 65px;
+        left: -255px;
+        z-index: 99999;
+        box-shadow: 2px 5px 5px #565656;
+        transition: left 0.5s;
+    }
+
+    #menu.menu-ativo {
+        left: 0;
+    }
+
+    #menu ul {
+        margin-top: 30px;
+        display: block;
+    }
+
+    #menu li:hover {
+        background-color: #90e0ff;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    #formPesquisa {
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #formPesquisa form {
+        flex-direction: column;
+    }
+
+    #formPesquisa input {
+        flex-grow: 1;
+    }
+
+    .form-icon {
+        display: flex;
+        width: 100%;
+    }
+
+    .lista-servicos-banner {
+        display: none;
+    }
+
+    #banner h2 {
+        font-size: 20px;
+    }
+
+    #banner p {
+        font-size: 14px;
+    }
+
+    .card-servico {
+        width: calc((100% / 2) - 30px);
+        flex-grow: 1;
+    }
+
+    .coluna-rodape {
+        width: 50%;
+    }
+}
