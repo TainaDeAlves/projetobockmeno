@@ -16,13 +16,13 @@ return new class extends Migration
             $table->string("titulo", 100);
             $table->text("descricao");
             $table->decimal("valor");
-            $table->integer("qtde_votos");
-            $table->integer("total_votos");
-            $table->string("telefone",20);
+            $table->integer("qtde_votos")->default(0);
+            $table->integer("total_votos")->default(0);
+            $table->string("telefone",20)->nullable();
             $table->string("celular",20);
             $table->string("endereco");
             $table->string("numero",10);
-            $table->string("complemento",45);
+            $table->string("complemento",45)->nullable();
             $table->string("bairro",80);
             $table->string("cidade",80);
             $table->string("estado",80);

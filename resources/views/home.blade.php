@@ -54,6 +54,8 @@
 
             <div class="lista-card-servico">
 
+                @foreach ($servicos as $servico )
+                    
                 <!-- inicio card serviço -->
                 <div class="card-servico">
                     <div class="card-foto">
@@ -61,7 +63,7 @@
                         <div class="card-foto-legenda">
 
                             <div class="card-foto-preco">
-                                r$30
+                                R${{number_format($servico->valor,2,',') }}
                             </div>
 
                             <div class="card-foto-categoria">
@@ -73,7 +75,7 @@
 
                     <div class="card-descricao">
                         <div class="card-titulo">
-                            <h3>Formatação de Computadores</h3>
+                            <h3>{{$servico->titulo}}</h3>
                         </div>
                         <div class="card-avaliacao">
                             <i class="fa-regular fa-star"></i>
@@ -87,11 +89,11 @@
                         <div class="card-descricao-legenda">
 
                             <div class="card-descricao-telefone">
-                                <i class="fa-solid fa-phone"></i> xxxxxxxx94
+                                <i class="fa-solid fa-phone"></i>{{$servico->telefone}} 
                             </div>
 
                             <div class="card-descricao-local">
-                                Marília<i class="fa-solid fa-location-dot"></i>
+                                {{$servico->cidade}}<i class="fa-solid fa-location-dot"></i>
                             </div>
                         </div>
                     </div>
@@ -100,245 +102,7 @@
 
                 </div>
                 <!--final card  serviço -->
-
-                <!--inicio card serviço -->
-                <div class="card-servico">
-                    <div class="card-foto">
-                        <img src="{{asset("img/categoria-informatica.jpg")}}" alt="barbeiro">
-                        <div class="card-foto-legenda">
-
-                            <div class="card-foto-preco">
-                                r$30
-                            </div>
-
-                            <div class="card-foto-categoria">
-                                informatica
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="card-descricao">
-                        <div class="card-titulo">
-                            <h3>Formatação de Computadores</h3>
-                        </div>
-                        <div class="card-avaliacao">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>(5)
-                        </div>
-
-
-                        <div class="card-descricao-legenda">
-
-                            <div class="card-descricao-telefone">
-                                <i class="fa-solid fa-phone"></i> xxxxxxxx94
-                            </div>
-
-                            <div class="card-descricao-local">
-                                Marília<i class="fa-solid fa-location-dot"></i>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-
-                </div>
-                <!--final card  serviço -->
-
-                <!--inicio card serviço -->
-                <div class="card-servico">
-                    <div class="card-foto">
-                        <img src="{{asset("img/categoria-informatica.jpg")}}" alt="barbeiro">
-                        <div class="card-foto-legenda">
-
-                            <div class="card-foto-preco">
-                                r$30
-                            </div>
-
-                            <div class="card-foto-categoria">
-                                informatica
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="card-descricao">
-                        <div class="card-titulo">
-                            <h3>Formatação de Computadores</h3>
-                        </div>
-                        <div class="card-avaliacao">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>(5)
-                        </div>
-
-
-                        <div class="card-descricao-legenda">
-
-                            <div class="card-descricao-telefone">
-                                <i class="fa-solid fa-phone"></i> xxxxxxxx94
-                            </div>
-
-                            <div class="card-descricao-local">
-                                Marília<i class="fa-solid fa-location-dot"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- final card  serviço -->
-
-                <!-- inicio card serviço -->
-                <div class="card-servico">
-                    <div class="card-foto">
-                        <img src="{{asset("img/categoria-informatica.jpg")}}" alt="barbeiro">
-                        <div class="card-foto-legenda">
-                            <div class="card-foto-preco">
-                                r$30
-                            </div>
-
-                            <div class="card-foto-categoria">
-                                informatica
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="card-descricao">
-                        <div class="card-titulo">
-                            <h3>Formatação de Computadores</h3>
-                        </div>
-                        <div class="card-avaliacao">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>(5)
-                        </div>
-
-
-                        <div class="card-descricao-legenda">
-
-                            <div class="card-descricao-telefone">
-                                <i class="fa-solid fa-phone"></i> xxxxxxxx94
-                            </div>
-
-                            <div class="card-descricao-local">
-                                Marília<i class="fa-solid fa-location-dot"></i>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-
-                </div>
-                <!--final card  serviço -->
-
-                <!--inicio card serviço -->
-                <div class="card-servico">
-                    <div class="card-foto">
-                        <img src="{{asset("img/categoria-informatica.jpg")}}" alt="barbeiro">
-                        <div class="card-foto-legenda">
-
-                            <div class="card-foto-preco">
-                                r$30
-                            </div>
-
-                            <div class="card-foto-categoria">
-                                informatica
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="card-descricao">
-                        <div class="card-titulo">
-                            <h3>Formatação de Computadores</h3>
-                        </div>
-                        <div class="card-avaliacao">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>(5)
-                        </div>
-
-
-                        <div class="card-descricao-legenda">
-
-                            <div class="card-descricao-telefone">
-                                <i class="fa-solid fa-phone"></i> (14)9999-9999
-                            </div>
-
-                            <div class="card-descricao-local">
-                                Marília<i class="fa-solid fa-location-dot"></i>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-
-                </div>
-                <!--final card  serviço -->
-
-                <!--inicio card serviço -->
-                <div class="card-servico">
-                    <div class="card-foto">
-                        <img src="{{asset("img/categoria-informatica.jpg")}}" alt="barbeiro">
-
-                        <div class="card-foto-legenda">
-
-                            <div class="card-foto-preco">
-                                r$30
-                            </div>
-
-                            <div class="card-foto-categoria">
-                                informatica
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="card-descricao">
-                        <div class="card-titulo">
-                            <h3>Formatação de Computadores</h3>
-                        </div>
-                        <div class="card-avaliacao">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>(5)
-                        </div>
-
-
-                        <div class="card-descricao-legenda">
-
-                            <div class="card-descricao-telefone">
-                                <i class="fa-solid fa-phone"></i> xxxxxxxx94
-                            </div>
-
-                            <div class="card-descricao-local">
-                                Marília<i class="fa-solid fa-location-dot"></i>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-                <!--final card  serviço -->
-
+                @endforeach
             </div>
 
         </section>
